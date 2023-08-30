@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunting</title>
+    <link rel="stylesheet" href="src/cdn.jsdelivr.net_npm_daisyui@3.3.1_dist_full.css">
+    <script src="src/cdn.tailwindcss.com_3.3.3"></script>
+    <style>
+        .bg-body{
+            background: rgba(13, 110, 253, 0.05);
+        }
+    </style>
+</head>
+<body >
+    
+    <header class="px-20 py-3 flex justify-between items-center">
+        <h2 class="text-lg lg:text-3xl font-bold text-slate-900 font-mono">Hot Gadgets</h2>
+        <button class="btn px-10 bg-blue-500 hover:bg-blue-600 text-white tracking-widest">Sign Up</button>
+    </header>
+
+    <main class = "mx-auto">
+
+        <section class="mx-auto text-center mb-24 mt-20 w-7/12">
+            <h1 class="text-6xl text-zinc-900 font-bold mb-10">Apple Iphone 13 Pro Max</h1>
+            <p class="text-lg text-slate-700 font-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+            <button class="btn px-10 bg-blue-500 hover:bg-blue-600 text-white tracking-widest mt-10">Buy Now</button>
+        </section>
+
+
+
+
+        <!-- Phones card Section started from here -->
+         <!-- Search Section -->
+         <section class="flex bg-stone-200 justify-end items-center lg:mx-auto text-center mb-24 mt-20 w-full lg:w-11/12 px-12 py-10 shadow-2xl">
+            <input id="searcField" type="text" placeholder="Type here" class="bg-slate-100 input focus:outline-0 focus:border-0 w-full max-w-xs rounded-sm" />
+            <button  onclick="searchHandle()"  class="btn bg-emerald-400 hover:bg-emerald-500 text-white ms-2 rounded-sm">Search</button>
+        </section>
+
+        <section class="mx-auto px-14 mb-24 mt-20">
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto md:mx-auto lg:mx-auto" id="phone_container">
+
+
+           </div>
+        </section>
+
+        <!-- Phones card Section ended here -->
+    </main>
+
+
+
+
+    <script src="js/phone.js"></script>
+</body>
+</html>
